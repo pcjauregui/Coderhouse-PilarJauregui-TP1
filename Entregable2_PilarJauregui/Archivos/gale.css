@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f1f1f1;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #f96c4a;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  border-bottom: 2px solid #f96c4a;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(44, 44, 44, 0.95);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #f96c4a 0%, #e25532 100%);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(249,108,74,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #e25532 0%, #f96c4a 100%);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.flex-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-row section {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+#interaccion {
+  text-align: center;
+}
+
+.imagen-ajustada-principal {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 16px;
+  border: 2px solid #f96c4a;
+  box-shadow: 0 2px 12px rgba(249,108,74,0.15);
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img.imagen-galeria {
+  max-width: 280px;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 12px;
+  border: 2px solid #f96c4a;
+  box-shadow: 0 2px 8px rgba(249,108,74,0.12);
+  transition: transform 0.2s;
+}
+
+.galeria img.imagen-galeria:hover {
+  transform: scale(1.05);
+  border-color: #e25532;
+}

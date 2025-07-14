@@ -1,0 +1,106 @@
+/* Estilos generales para fondo y tipografía */
+body {
+  background: #222;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado centrado y destacado */
+header {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+h1 {
+  color: #ff6b4a;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+/* Contenedor principal de las tarjetas */
+.personajes-lista {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Tarjeta de personaje */
+.card-personaje {
+  background: #292929;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-personaje:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Imagen del personaje */
+.card-personaje img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  transition: box-shadow 0.2s;
+}
+
+.card-personaje a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nombre del personaje */
+.card-personaje h2 {
+  color: #ff6b4a;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Botón Quiz */
+.card-personaje button {
+  background: #ff6b4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.card-personaje button:hover {
+  background: #ff3c00;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Responsive: apila las tarjetas en pantallas pequeñas */
+@media (max-width: 800px) {
+  .personajes-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .card-personaje {
+    width: 90%;
+    max-width: 350px;
+  }
+}
